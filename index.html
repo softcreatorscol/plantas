@@ -197,10 +197,51 @@ footer p{max-width:74ch}
 
 .fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:25;box-shadow:0 8px 22px rgba(0,0,0,.22);opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .25s,transform .25s}
 .fab.on{opacity:1;pointer-events:auto;transform:none}
+
+/* ilustraciones */
+:root{--leaf2:#9AD6B3;--i1:var(--fg);--i2:var(--bg);--i3:var(--fuc);--i4:var(--leaf);--i5:var(--leaf2);--i6:var(--pink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--leaf2:#2F7452}}
+:root[data-theme="dark"]{--leaf2:#2F7452}
+.gband{--i1:#FFFFFF;--i2:#E8F6EE;--i3:var(--accent-on);--i4:#7FD3A4;--i5:#B8E8CD;--i6:rgba(255,255,255,.14)}
+.fband{--i1:#FFFFFF;--i2:#FFE6F3;--i3:#FFFFFF;--i4:#8FE0B3;--i5:#C5F0D9;--i6:rgba(255,255,255,.16)}
+.card.pf{--i1:#0E4B31;--i2:#FFFFFF;--i3:#FFC2E2;--i4:#8FE0B3;--i5:#C5F0D9;--i6:rgba(255,255,255,.16)}
+.card.ce{--i1:#06281A;--i2:#FFFFFF;--i3:#FFC2E2;--i4:#7FD3A4;--i5:#B8E8CD;--i6:rgba(255,255,255,.14)}
+.i1{fill:var(--i1)}.i2{fill:var(--i2)}.i3{fill:var(--i3)}.i4{fill:var(--i4)}.i5{fill:var(--i5)}.i6{fill:var(--i6)}
+.s1,.s2,.s3,.s4,.s5,.s6{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.s1{stroke:var(--i1)}.s2{stroke:var(--i2)}.s3{stroke:var(--i3)}.s4{stroke:var(--i4)}.s5{stroke:var(--i5)}.s6{stroke:var(--i6)}
+.ill{display:block;max-width:100%;height:auto}
+.ab-left{display:flex;flex-direction:column;gap:28px;align-items:flex-start;min-width:0}
+.ab-left .branch{width:150px}
+.plants-wrap{margin-top:56px;overflow:hidden;position:relative}
+.plants{position:relative;left:50%;transform:translateX(-50%);width:max(100%,680px);max-width:none}
+.quote .wrap{position:relative}
+.deco{position:absolute;width:auto}
+.quote .deco{right:max(20px,env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%);height:260px}
+.close .wrap{position:relative}
+.close h2{max-width:11ch}
+.close .deco{right:max(20px,env(safe-area-inset-right,0px));bottom:-8px;height:340px}
+@media (max-width:860px){.quote .deco{display:none}.close .deco{height:160px;top:-8px;bottom:auto;opacity:.95}}
+@media (max-width:520px){.close .deco{height:110px}.close h2{max-width:8ch}}
+.alch-right{min-width:0}
+.alch-right .distill{width:100%;margin-bottom:26px}
+.ill-top{width:min(220px,64%);margin-bottom:18px}
+.ill-top.tea{width:min(270px,76%)}
+.wide-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:center}
+.wide-grid>div{min-width:0}
+.wide-art{width:100%;max-width:320px;justify-self:center}
+@media (max-width:860px){.wide-grid{grid-template-columns:1fr}.wide-art{max-width:260px;justify-self:start}}
+@keyframes drip{0%{transform:translateY(-4px);opacity:0}25%{opacity:1}80%{opacity:1}100%{transform:translateY(22px);opacity:0}}
+.drip{animation:drip 2.4s ease-in infinite;transform-box:fill-box}
+.drip.d2{animation-delay:1.2s}
+@keyframes wf{0%{transform:translateY(0);opacity:.35}50%{opacity:.9}100%{transform:translateY(-10px);opacity:.35}}
+.wf{animation:wf 3.4s ease-in-out infinite alternate;transform-box:fill-box}
+.wf.w1{animation-delay:.9s}.wf.w2{animation-delay:1.7s}
+@media (prefers-reduced-motion:reduce){.drip,.wf{animation:none}}
 </style>
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><g id="lf"><path d="M0 0C10-14 34-14 46 0C34 14 10 14 0 0Z"/></g></defs></svg>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#inicio">
@@ -249,7 +290,7 @@ footer p{max-width:74ch}
 
 <section class="about gband" id="nosotros">
   <div class="wrap grid">
-    <h2>La naturaleza ya tiene respuestas.</h2>
+    <div class="ab-left"><h2>La naturaleza ya tiene respuestas.</h2><svg class="ill branch" viewBox="0 0 240 420" fill="none" aria-hidden="true" focusable="false"><path class="s4" stroke-width="4" d="M124.2 410.0 L123.0 400.0 L121.7 390.0 L120.4 380.0 L119.1 370.0 L117.8 360.0 L116.5 350.0 L115.4 340.0 L114.4 330.0 L113.5 320.0 L112.8 310.0 L112.3 300.0 L112.1 290.0 L112.0 280.0 L112.2 270.0 L112.6 260.0 L113.2 250.0 L113.9 240.0 L114.9 230.0 L116.0 220.0 L117.2 210.0 L118.5 200.0 L119.8 190.0 L121.1 180.0 L122.4 170.0 L123.7 160.0 L124.8 150.0 L125.8 140.0 L126.6 130.0 L127.3 120.0 L127.7 110.0 L128.0 100.0 L128.0 90.0 L127.8 80.0 L127.4 70.0 L126.7 60.0 L125.9 50.0 L124.9 40.0 L123.8 30.0 L122.6 20.0"/><use href="#lf" class="i4" transform="translate(119.3 372.0) rotate(-38) scale(1.9)"/><use href="#lf" class="i5" transform="translate(119.3 350.0) rotate(218) scale(1.9)"/><use href="#lf" class="i5" transform="translate(114.0 326.0) rotate(-38) scale(1.7673076923076922)"/><use href="#lf" class="i4" transform="translate(114.0 304.0) rotate(218) scale(1.7673076923076922)"/><use href="#lf" class="i4" transform="translate(112.0 280.0) rotate(-38) scale(1.6346153846153846)"/><use href="#lf" class="i5" transform="translate(112.0 258.0) rotate(218) scale(1.6346153846153846)"/><use href="#lf" class="i5" transform="translate(114.5 234.0) rotate(-38) scale(1.501923076923077)"/><use href="#lf" class="i4" transform="translate(114.5 212.0) rotate(218) scale(1.501923076923077)"/><use href="#lf" class="i4" transform="translate(120.1 188.0) rotate(-38) scale(1.3692307692307693)"/><use href="#lf" class="i5" transform="translate(120.1 166.0) rotate(218) scale(1.3692307692307693)"/><use href="#lf" class="i5" transform="translate(125.6 142.0) rotate(-38) scale(1.2365384615384614)"/><use href="#lf" class="i4" transform="translate(125.6 120.0) rotate(218) scale(1.2365384615384614)"/><use href="#lf" class="i4" transform="translate(128.0 96.0) rotate(-38) scale(1.103846153846154)"/><use href="#lf" class="i5" transform="translate(128.0 74.0) rotate(218) scale(1.103846153846154)"/><use href="#lf" class="i4" transform="translate(122.6 28.0) rotate(-90) scale(1.0)"/><path class="s4" stroke-width="2.5" d="M112.3 300 Q134.3 296 146.3 278"/><circle class="i3" cx="146.3" cy="276" r="7"/><path class="s4" stroke-width="2.5" d="M119.0 196 Q141.0 192 153.0 174"/><circle class="i3" cx="153.0" cy="172" r="7"/><path class="s4" stroke-width="2.5" d="M127.7 112 Q149.7 108 161.7 90"/><circle class="i3" cx="161.7" cy="88" r="7"/></svg></div>
     <div>
       <p class="big">Creemos que la naturaleza ya tiene respuestas para lo que hoy nos agota: el estrés, el insomnio, la ansiedad y el ritmo acelerado.</p>
       <p class="small">Trabajamos con la esencia de las plantas, su aroma, su savia y su espíritu, para acompañarte hacia un estilo de vida más consciente, sereno y saludable.</p>
@@ -281,11 +322,12 @@ footer p{max-width:74ch}
         <b>Evocar</b><span>recuerdos, afectos y bienestar</span>
       </li>
     </ul>
+    <div class="plants-wrap"><svg class="ill plants" viewBox="0 0 1000 200" fill="none" aria-hidden="true" focusable="false"><rect class="i6" x="0" y="188" width="1000" height="6" rx="3"/><path class="s4" stroke-width="3" d="M100 190 C98 150 104 110 100 50"/><ellipse class="i3" cx="94" cy="52" rx="4.5" ry="8" transform="rotate(18 94 52)"/><ellipse class="i3" cx="106" cy="61" rx="4.5" ry="8" transform="rotate(-18 106 61)"/><ellipse class="i3" cx="94" cy="70" rx="4.5" ry="8" transform="rotate(18 94 70)"/><ellipse class="i3" cx="106" cy="79" rx="4.5" ry="8" transform="rotate(-18 106 79)"/><ellipse class="i3" cx="94" cy="88" rx="4.5" ry="8" transform="rotate(18 94 88)"/><ellipse class="i3" cx="106" cy="97" rx="4.5" ry="8" transform="rotate(-18 106 97)"/><ellipse class="i3" cx="94" cy="106" rx="4.5" ry="8" transform="rotate(18 94 106)"/><ellipse class="i3" cx="106" cy="115" rx="4.5" ry="8" transform="rotate(-18 106 115)"/><ellipse class="i3" cx="94" cy="124" rx="4.5" ry="8" transform="rotate(18 94 124)"/><ellipse class="i3" cx="106" cy="133" rx="4.5" ry="8" transform="rotate(-18 106 133)"/><ellipse class="i3" cx="100" cy="42" rx="4" ry="9"/><use href="#lf" class="i4" transform="translate(100.0 190.0) rotate(-62) scale(1.3)"/><use href="#lf" class="i5" transform="translate(100.0 190.0) rotate(-118) scale(1.3)"/><use href="#lf" class="i5" transform="translate(100.0 176.0) rotate(-35) scale(1.0)"/><path class="s4" stroke-width="3" d="M280 190 C270 150 292 110 284 40"/><ellipse class="i4" cx="289" cy="165" rx="13" ry="16" transform="rotate(30 289 165)"/><ellipse class="i5" cx="259" cy="175" rx="13" ry="16" transform="rotate(-30 259 175)"/><ellipse class="i5" cx="289" cy="138" rx="13" ry="16" transform="rotate(30 289 138)"/><ellipse class="i4" cx="259" cy="148" rx="13" ry="16" transform="rotate(-30 259 148)"/><ellipse class="i4" cx="297" cy="112" rx="13" ry="16" transform="rotate(30 297 112)"/><ellipse class="i5" cx="267" cy="122" rx="13" ry="16" transform="rotate(-30 267 122)"/><ellipse class="i5" cx="301" cy="86" rx="13" ry="16" transform="rotate(30 301 86)"/><ellipse class="i4" cx="271" cy="96" rx="13" ry="16" transform="rotate(-30 271 96)"/><ellipse class="i4" cx="301" cy="62" rx="13" ry="16" transform="rotate(30 301 62)"/><ellipse class="i5" cx="271" cy="72" rx="13" ry="16" transform="rotate(-30 271 72)"/><ellipse class="i4" cx="284" cy="30" rx="11" ry="15"/><path class="s4" stroke-width="3.5" d="M470 190 C474 160 466 130 470 100"/><use href="#lf" class="i4" transform="translate(470.0 165.0) rotate(-40) scale(1.2)"/><use href="#lf" class="i5" transform="translate(470.0 150.0) rotate(220) scale(1.1)"/><ellipse class="i3" cx="0" cy="-21" rx="8" ry="19" transform="translate(470 86) rotate(0)"/><ellipse class="i3" cx="0" cy="-21" rx="8" ry="19" transform="translate(470 86) rotate(36)"/><ellipse class="i3" cx="0" cy="-21" rx="8" ry="19" transform="translate(470 86) rotate(72)"/><ellipse class="i3" cx="0" cy="-21" rx="8" ry="19" transform="translate(470 86) rotate(108)"/><ellipse class="i3" cx="0" cy="-21" rx="8" ry="19" transform="translate(470 86) rotate(144)"/><ellipse class="i3" cx="0" cy="-21" rx="8" ry="19" transform="translate(470 86) rotate(180)"/><ellipse class="i3" cx="0" cy="-21" rx="8" ry="19" transform="translate(470 86) rotate(216)"/><ellipse class="i3" cx="0" cy="-21" rx="8" ry="19" transform="translate(470 86) rotate(252)"/><ellipse class="i3" cx="0" cy="-21" rx="8" ry="19" transform="translate(470 86) rotate(288)"/><ellipse class="i3" cx="0" cy="-21" rx="8" ry="19" transform="translate(470 86) rotate(324)"/><circle class="i1" cx="470" cy="86" r="10"/><path class="s4" stroke-width="3" d="M660 190 C664 150 656 110 662 50"/><path class="s4" stroke-width="2.6" d="M664 62 L679 52 M664 62 L649 52"/><path class="s4" stroke-width="2.6" d="M664 71 L679 61 M664 71 L649 61"/><path class="s4" stroke-width="2.6" d="M664 80 L679 70 M664 80 L649 70"/><path class="s4" stroke-width="2.6" d="M664 89 L679 79 M664 89 L649 79"/><path class="s4" stroke-width="2.6" d="M664 98 L679 88 M664 98 L649 88"/><path class="s4" stroke-width="2.6" d="M664 107 L679 97 M664 107 L649 97"/><path class="s4" stroke-width="2.6" d="M664 116 L679 106 M664 116 L649 106"/><path class="s4" stroke-width="2.6" d="M660 125 L675 115 M660 125 L645 115"/><path class="s4" stroke-width="2.6" d="M660 134 L675 124 M660 134 L645 124"/><path class="s4" stroke-width="2.6" d="M660 143 L675 133 M660 143 L645 133"/><path class="s4" stroke-width="2.6" d="M660 152 L675 142 M660 152 L645 142"/><path class="s4" stroke-width="2.6" d="M660 161 L675 151 M660 161 L645 151"/><path class="s4" stroke-width="2.6" d="M660 170 L675 160 M660 170 L645 160"/><path class="s4" stroke-width="2.6" d="M660 179 L675 169 M660 179 L645 169"/><path class="s4" stroke-width="3" d="M850 190 C846 150 856 110 850 60"/><use href="#lf" class="i4" transform="translate(850.0 172.0) rotate(-32) scale(1.5)"/><use href="#lf" class="i5" transform="translate(850.0 164.0) rotate(212) scale(1.5)"/><use href="#lf" class="i5" transform="translate(850.0 142.0) rotate(-32) scale(1.5)"/><use href="#lf" class="i4" transform="translate(850.0 134.0) rotate(212) scale(1.5)"/><use href="#lf" class="i4" transform="translate(853.0 112.0) rotate(-32) scale(1.5)"/><use href="#lf" class="i5" transform="translate(853.0 104.0) rotate(212) scale(1.5)"/><use href="#lf" class="i5" transform="translate(853.0 86.0) rotate(-32) scale(1.5)"/><use href="#lf" class="i4" transform="translate(853.0 78.0) rotate(212) scale(1.5)"/><use href="#lf" class="i4" transform="translate(853.0 58.0) rotate(-90) scale(1.3)"/></svg></div>
   </div>
 </section>
 
 <section class="quote fband">
-  <div class="wrap"><p>Respirar un aroma es conversar con <span>la planta.</span></p></div>
+  <div class="wrap"><p>Respirar un aroma es conversar con <span>la planta.</span></p><svg class="ill branch deco" viewBox="0 0 240 420" fill="none" aria-hidden="true" focusable="false"><path class="s4" stroke-width="4" d="M124.2 410.0 L123.0 400.0 L121.7 390.0 L120.4 380.0 L119.1 370.0 L117.8 360.0 L116.5 350.0 L115.4 340.0 L114.4 330.0 L113.5 320.0 L112.8 310.0 L112.3 300.0 L112.1 290.0 L112.0 280.0 L112.2 270.0 L112.6 260.0 L113.2 250.0 L113.9 240.0 L114.9 230.0 L116.0 220.0 L117.2 210.0 L118.5 200.0 L119.8 190.0 L121.1 180.0 L122.4 170.0 L123.7 160.0 L124.8 150.0 L125.8 140.0 L126.6 130.0 L127.3 120.0 L127.7 110.0 L128.0 100.0 L128.0 90.0 L127.8 80.0 L127.4 70.0 L126.7 60.0 L125.9 50.0 L124.9 40.0 L123.8 30.0 L122.6 20.0"/><use href="#lf" class="i4" transform="translate(119.3 372.0) rotate(-38) scale(1.9)"/><use href="#lf" class="i5" transform="translate(119.3 350.0) rotate(218) scale(1.9)"/><use href="#lf" class="i5" transform="translate(114.0 326.0) rotate(-38) scale(1.7673076923076922)"/><use href="#lf" class="i4" transform="translate(114.0 304.0) rotate(218) scale(1.7673076923076922)"/><use href="#lf" class="i4" transform="translate(112.0 280.0) rotate(-38) scale(1.6346153846153846)"/><use href="#lf" class="i5" transform="translate(112.0 258.0) rotate(218) scale(1.6346153846153846)"/><use href="#lf" class="i5" transform="translate(114.5 234.0) rotate(-38) scale(1.501923076923077)"/><use href="#lf" class="i4" transform="translate(114.5 212.0) rotate(218) scale(1.501923076923077)"/><use href="#lf" class="i4" transform="translate(120.1 188.0) rotate(-38) scale(1.3692307692307693)"/><use href="#lf" class="i5" transform="translate(120.1 166.0) rotate(218) scale(1.3692307692307693)"/><use href="#lf" class="i5" transform="translate(125.6 142.0) rotate(-38) scale(1.2365384615384614)"/><use href="#lf" class="i4" transform="translate(125.6 120.0) rotate(218) scale(1.2365384615384614)"/><use href="#lf" class="i4" transform="translate(128.0 96.0) rotate(-38) scale(1.103846153846154)"/><use href="#lf" class="i5" transform="translate(128.0 74.0) rotate(218) scale(1.103846153846154)"/><use href="#lf" class="i4" transform="translate(122.6 28.0) rotate(-90) scale(1.0)"/><path class="s4" stroke-width="2.5" d="M112.3 300 Q134.3 296 146.3 278"/><circle class="i3" cx="146.3" cy="276" r="7"/><path class="s4" stroke-width="2.5" d="M119.0 196 Q141.0 192 153.0 174"/><circle class="i3" cx="153.0" cy="172" r="7"/><path class="s4" stroke-width="2.5" d="M127.7 112 Q149.7 108 161.7 90"/><circle class="i3" cx="161.7" cy="88" r="7"/></svg></div>
 </section>
 
 <section class="alch tint" id="alquimia">
@@ -295,6 +337,7 @@ footer p{max-width:74ch}
         <h2>La alquimia de las plantas: alma y espíritu</h2>
         <p class="lead" style="margin-top:16px">Para nosotros, cada planta tiene tres dimensiones:</p>
       </div>
+      <div class="alch-right"><svg class="ill distill" viewBox="0 0 680 260" fill="none" aria-hidden="true" focusable="false"><rect class="i6" x="10" y="236" width="660" height="6" rx="3"/><rect class="i3" x="66" y="188" width="68" height="12" rx="6"/><path class="i3" d="M72 200 L80 238 H120 L128 200Z"/><path class="s4" stroke-width="4" d="M100 190 C98 160 104 130 100 96"/><use href="#lf" class="i4" transform="translate(100.0 188.0) rotate(-72) scale(1.5)"/><use href="#lf" class="i5" transform="translate(100.0 188.0) rotate(-108) scale(1.5)"/><use href="#lf" class="i5" transform="translate(100.0 160.0) rotate(-30) scale(1.3)"/><use href="#lf" class="i4" transform="translate(100.0 150.0) rotate(210) scale(1.3)"/><use href="#lf" class="i4" transform="translate(100.0 124.0) rotate(-55) scale(1.1)"/><use href="#lf" class="i5" transform="translate(100.0 118.0) rotate(235) scale(1.1)"/><use href="#lf" class="i4" transform="translate(100.0 98.0) rotate(-90) scale(1.1)"/><path class="i3" d="M300 234 C287 224 291 213 300 204 C309 213 313 224 300 234Z"/><rect class="i1" x="276" y="233" width="48" height="5" rx="2.5"/><circle class="i6" cx="300" cy="150" r="52"/><path class="i4" d="M248 150 a52 52 0 0 0 104 0Z"/><circle class="i5" cx="282" cy="176" r="5"/><circle class="i5" cx="312" cy="186" r="4"/><circle class="i5" cx="322" cy="164" r="3"/><circle class="s1" stroke-width="5" cx="300" cy="150" r="52"/><path class="s1" stroke-width="14" d="M300 99 V74 C300 54 322 48 346 52 L480 74 L560 126"/><path class="s6" stroke-width="6" d="M300 99 V74 C300 54 322 48 346 52 L480 74 L560 126"/><rect class="i2" x="540" y="158" width="56" height="70" rx="12"/><path class="i3" d="M544 202 H592 V214 a12 12 0 0 1 -12 12 H556 a12 12 0 0 1 -12 -12Z"/><rect class="s1" stroke-width="4" x="540" y="158" width="56" height="70" rx="12"/><rect class="i1" x="554" y="148" width="28" height="12" rx="4"/><path class="i3 drip" d="M562 128 C557 135 556 139 562 143 C568 139 567 135 562 128Z"/><path class="i3 drip d2" d="M562 128 C557 135 556 139 562 143 C568 139 567 135 562 128Z"/><path class="s3 wf w0" stroke-width="3" d="M586 144 C572 124 600 104 586 84 S598 54 590 30"/><path class="s4 wf w1" stroke-width="3" d="M602 144 C588 124 616 104 602 84 S614 54 606 30"/><path class="s3 wf w2" stroke-width="3" d="M618 144 C604 124 632 104 618 84 S630 54 622 30"/></svg>
       <ol class="stages">
         <li class="stage">
           <div class="ic"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 40V20M22 28C12 28 8 20 8 10c10 0 14 6 14 14M22 24c0-8 5-13 14-14 0 9-5 14-14 14"/></svg></div>
@@ -309,6 +352,7 @@ footer p{max-width:74ch}
           <div><h3>El espíritu de la planta</h3><p>Su aroma, lo invisible que llega a ti sin tocarte. Es la huella sutil con la que la planta comunica su intención: calmar, limpiar, abrigar, despertar.</p></div>
         </li>
       </ol>
+      </div>
     </div>
     <p class="closing"><b>La alquimia</b> consiste en acompañar ese tránsito: del cuerpo al alma y del alma al espíritu, para que la esencia de la planta se encuentre con la tuya.</p>
   </div>
@@ -319,7 +363,7 @@ footer p{max-width:74ch}
     <h2>Nuestros servicios</h2>
     <div class="svc-grid">
       <article class="card pf">
-        <h3>Perfume comestible</h3>
+        <svg class="ill ill-top" viewBox="0 0 220 200" fill="none" aria-hidden="true" focusable="false"><circle class="i6" cx="110" cy="108" r="90"/><rect class="i2" x="72" y="86" width="76" height="92" rx="16"/><path class="i3" d="M72 128 H148 V162 a16 16 0 0 1 -16 16 H88 a16 16 0 0 1 -16 -16Z"/><rect class="i1" x="84" y="100" width="52" height="38" rx="6"/><use href="#lf" class="i5" transform="translate(98.0 122.0) rotate(-30) scale(0.75)"/><use href="#lf" class="i4" transform="translate(114.0 122.0) rotate(-150) scale(0.75)"/><rect class="i1" x="88" y="72" width="44" height="16" rx="4"/><path class="i1" d="M94 72 C94 36 126 36 126 72Z"/><path class="i2 drip" d="M176 52 C169 63 168 69 176 74 C184 69 183 63 176 52Z"/><g transform="translate(40 62)"><ellipse class="i2" cx="0" cy="-13" rx="6" ry="12" transform="rotate(0)"/><ellipse class="i2" cx="0" cy="-13" rx="6" ry="12" transform="rotate(60)"/><ellipse class="i2" cx="0" cy="-13" rx="6" ry="12" transform="rotate(120)"/><ellipse class="i2" cx="0" cy="-13" rx="6" ry="12" transform="rotate(180)"/><ellipse class="i2" cx="0" cy="-13" rx="6" ry="12" transform="rotate(240)"/><ellipse class="i2" cx="0" cy="-13" rx="6" ry="12" transform="rotate(300)"/><circle class="i1" r="6"/></g><use href="#lf" class="i4" transform="translate(150.0 180.0) rotate(-50) scale(1.3)"/><use href="#lf" class="i5" transform="translate(162.0 180.0) rotate(-18) scale(1.2)"/><use href="#lf" class="i4" transform="translate(44.0 180.0) rotate(-130) scale(1.2)"/><use href="#lf" class="i5" transform="translate(34.0 180.0) rotate(-165) scale(1.0)"/></svg><h3>Perfume comestible</h3>
         <p class="sublead">Sanar de adentro hacia afuera</p>
         <p>Elaborado con aceites esenciales de calidad alimentaria, pensado para acompañar tu bienestar desde el interior, y no solo desde la piel.</p>
         <ul class="ticks">
@@ -331,7 +375,7 @@ footer p{max-width:74ch}
       </article>
 
       <article class="card ce">
-        <h3>Ceremonia de las plantas</h3>
+        <svg class="ill ill-top tea" viewBox="0 0 280 190" fill="none" aria-hidden="true" focusable="false"><ellipse class="i1" cx="140" cy="172" rx="120" ry="7" opacity=".5"/><path class="s2" stroke-width="10" d="M58 96 C22 90 22 142 60 136"/><path class="i2" d="M162 104 C192 100 198 78 218 70 L226 80 C210 92 208 124 166 134Z"/><ellipse class="i2" cx="110" cy="112" rx="58" ry="48"/><path class="s3" stroke-width="9" d="M56 116 Q110 136 164 116"/><ellipse class="i2" cx="110" cy="68" rx="32" ry="9"/><circle class="i3" cx="110" cy="56" r="7"/><path class="i2" d="M212 138 h52 c0 24 -11 34 -26 34 s-26 -10 -26 -34z"/><path class="s3" stroke-width="5" d="M212 142 H264"/><ellipse class="i3" cx="238" cy="174" rx="34" ry="5"/><path class="s2 wf w0" stroke-width="3" opacity=".8" d="M219 62 C208 48 230 38 219 22"/><path class="s2 wf w1" stroke-width="3" opacity=".8" d="M232 62 C222 50 242 42 233 28"/><use href="#lf" class="i4" transform="translate(24.0 170.0) rotate(-30) scale(1.1)"/><use href="#lf" class="i5" transform="translate(34.0 172.0) rotate(-60) scale(1.0)"/><use href="#lf" class="i5" transform="translate(10.0 172.0) rotate(-10) scale(0.9)"/></svg><h3>Ceremonia de las plantas</h3>
         <p>Un encuentro pausado, inspirado en la ceremonia del té. Un ritual para desacelerar, respirar y reconectar.</p>
         <ol class="steps" aria-label="Cómo se vive la ceremonia">
           <li><div><b>Llegada:</b> el espacio, los aromas y la bienvenida</div></li>
@@ -343,7 +387,7 @@ footer p{max-width:74ch}
         <div class="pills"><span>Individual</span><span>En pareja</span><span>En grupo</span></div>
       </article>
 
-      <article class="card wide">
+      <article class="card wide"><div class="wide-grid"><div>
         <small>Opcional</small>
         <h3>Experiencias complementarias</h3>
         <ul class="ticks">
@@ -351,6 +395,7 @@ footer p{max-width:74ch}
           <li>Infusiones y blends de plantas</li>
           <li>Talleres de bienestar y estilo de vida consciente</li>
         </ul>
+        </div><svg class="ill wide-art" viewBox="0 0 300 170" fill="none" aria-hidden="true" focusable="false"><rect class="i6" x="6" y="158" width="288" height="6" rx="3"/><rect class="i4" x="20" y="92" width="72" height="68" rx="12"/><rect class="i3" x="20" y="116" width="72" height="14"/><rect class="i1" x="54" y="76" width="4" height="16" rx="2"/><path class="i3" d="M56 74 C42 62 46 48 56 30 C66 48 70 62 56 74Z"/><path class="i2" d="M56 70 C50 64 52 56 56 48 C60 56 62 64 56 70Z"/><path class="s4" stroke-width="3" d="M156 150 L120 64"/><use href="#lf" class="i4" transform="translate(120.0 64.0) rotate(-122.4) scale(1.1)"/><path class="s4" stroke-width="3" d="M156 150 L138 52"/><use href="#lf" class="i5" transform="translate(138.0 52.0) rotate(-106.2) scale(1.1)"/><path class="s4" stroke-width="3" d="M156 150 L158 48"/><use href="#lf" class="i5" transform="translate(158.0 48.0) rotate(-88.2) scale(1.1)"/><path class="s4" stroke-width="3" d="M156 150 L178 54"/><use href="#lf" class="i5" transform="translate(178.0 54.0) rotate(-70.2) scale(1.1)"/><path class="s4" stroke-width="3" d="M156 150 L194 68"/><use href="#lf" class="i5" transform="translate(194.0 68.0) rotate(-55.8) scale(1.1)"/><path class="i3" d="M138 112 Q156 120 174 112 L172 124 Q156 132 140 124Z"/><path class="i4" d="M222 160 V132 a14 14 0 0 1 14 -14 h8 a14 14 0 0 1 14 14 V160Z"/><rect class="i1" x="233" y="100" width="18" height="20" rx="3"/><rect class="i3" x="222" y="136" width="36" height="8"/><path class="s1" stroke-width="2.5" d="M242 102 L220 44"/><path class="s1" stroke-width="2.5" d="M242 102 L236 34"/><path class="s1" stroke-width="2.5" d="M242 102 L252 36"/><path class="s1" stroke-width="2.5" d="M242 102 L266 50"/></svg></div>
       </article>
     </div>
   </div>
@@ -435,6 +480,7 @@ footer p{max-width:74ch}
       <span><small>Correo</small>[Correo]</span>
       <span><small>Redes</small>[Redes]</span>
     </div>
+    <svg class="ill branch deco" viewBox="0 0 240 420" fill="none" aria-hidden="true" focusable="false"><path class="s4" stroke-width="4" d="M124.2 410.0 L123.0 400.0 L121.7 390.0 L120.4 380.0 L119.1 370.0 L117.8 360.0 L116.5 350.0 L115.4 340.0 L114.4 330.0 L113.5 320.0 L112.8 310.0 L112.3 300.0 L112.1 290.0 L112.0 280.0 L112.2 270.0 L112.6 260.0 L113.2 250.0 L113.9 240.0 L114.9 230.0 L116.0 220.0 L117.2 210.0 L118.5 200.0 L119.8 190.0 L121.1 180.0 L122.4 170.0 L123.7 160.0 L124.8 150.0 L125.8 140.0 L126.6 130.0 L127.3 120.0 L127.7 110.0 L128.0 100.0 L128.0 90.0 L127.8 80.0 L127.4 70.0 L126.7 60.0 L125.9 50.0 L124.9 40.0 L123.8 30.0 L122.6 20.0"/><use href="#lf" class="i4" transform="translate(119.3 372.0) rotate(-38) scale(1.9)"/><use href="#lf" class="i5" transform="translate(119.3 350.0) rotate(218) scale(1.9)"/><use href="#lf" class="i5" transform="translate(114.0 326.0) rotate(-38) scale(1.7673076923076922)"/><use href="#lf" class="i4" transform="translate(114.0 304.0) rotate(218) scale(1.7673076923076922)"/><use href="#lf" class="i4" transform="translate(112.0 280.0) rotate(-38) scale(1.6346153846153846)"/><use href="#lf" class="i5" transform="translate(112.0 258.0) rotate(218) scale(1.6346153846153846)"/><use href="#lf" class="i5" transform="translate(114.5 234.0) rotate(-38) scale(1.501923076923077)"/><use href="#lf" class="i4" transform="translate(114.5 212.0) rotate(218) scale(1.501923076923077)"/><use href="#lf" class="i4" transform="translate(120.1 188.0) rotate(-38) scale(1.3692307692307693)"/><use href="#lf" class="i5" transform="translate(120.1 166.0) rotate(218) scale(1.3692307692307693)"/><use href="#lf" class="i5" transform="translate(125.6 142.0) rotate(-38) scale(1.2365384615384614)"/><use href="#lf" class="i4" transform="translate(125.6 120.0) rotate(218) scale(1.2365384615384614)"/><use href="#lf" class="i4" transform="translate(128.0 96.0) rotate(-38) scale(1.103846153846154)"/><use href="#lf" class="i5" transform="translate(128.0 74.0) rotate(218) scale(1.103846153846154)"/><use href="#lf" class="i4" transform="translate(122.6 28.0) rotate(-90) scale(1.0)"/><path class="s4" stroke-width="2.5" d="M112.3 300 Q134.3 296 146.3 278"/><circle class="i3" cx="146.3" cy="276" r="7"/><path class="s4" stroke-width="2.5" d="M119.0 196 Q141.0 192 153.0 174"/><circle class="i3" cx="153.0" cy="172" r="7"/><path class="s4" stroke-width="2.5" d="M127.7 112 Q149.7 108 161.7 90"/><circle class="i3" cx="161.7" cy="88" r="7"/></svg>
   </div>
 </section>
 </main>
@@ -459,4 +505,4 @@ footer p{max-width:74ch}
 </script>
 
 </body>
-</html>  
+</html>
